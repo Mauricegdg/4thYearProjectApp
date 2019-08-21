@@ -1,0 +1,66 @@
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ShopBasket.deps.json
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ShopBasket.dll
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ref\ShopBasket.dll
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ShopBasket.pdb
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\LoginPage.xaml.g.cs
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\Menu\MasterDetail.xaml.g.cs
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\Menu\MasterPage.xaml.g.cs
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\RegisterPage.xaml.g.cs
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.csproj.CoreCompileInputs.cache
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.AssemblyInfoInputs.cache
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.AssemblyInfo.cs
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.dll
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ref\ShopBasket.dll
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.pdb
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.csprojAssemblyReference.cache
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\Home.xaml.g.cs
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\Basket.xaml.g.cs
+C:\Users\Maurice\Desktop\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\ProductDetails.xaml.g.cs
+E:\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ShopBasket.deps.json
+E:\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ShopBasket.dll
+E:\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ref\ShopBasket.dll
+E:\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ShopBasket.pdb
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.csprojAssemblyReference.cache
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\Basket.xaml.g.cs
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\Home.xaml.g.cs
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\ProductDetails.xaml.g.cs
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\LoginPage.xaml.g.cs
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\Menu\MasterDetail.xaml.g.cs
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\Menu\MasterPage.xaml.g.cs
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\RegisterPage.xaml.g.cs
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.csproj.CoreCompileInputs.cache
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.AssemblyInfoInputs.cache
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.AssemblyInfo.cs
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\XamlC.stamp
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.dll
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ref\ShopBasket.dll
+E:\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.pdb
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ShopBasket.deps.json
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ShopBasket.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ref\ShopBasket.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\bin\Debug\netstandard2.0\ShopBasket.pdb
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.csprojAssemblyReference.cache
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\Basket.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\Home.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\ProductDetails.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\LoginPage.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\Menu\MasterDetail.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\Menu\MasterPage.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\View\RegisterPage.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.csproj.CoreCompileInputs.cache
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.AssemblyInfoInputs.cache
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.AssemblyInfo.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ref\ShopBasket.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.pdb
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\Project_2019\App_v2\ShopBasket\ShopBasket\obj\Debug\netstandard2.0\XamlC.stamp
