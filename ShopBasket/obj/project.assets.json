@@ -756,11 +756,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\Project_2019\\App_v2\\ShopBasket\\ShopBasket\\ShopBasket.csproj",
+      "projectUniqueName": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj",
       "projectName": "ShopBasket",
-      "projectPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\Project_2019\\App_v2\\ShopBasket\\ShopBasket\\ShopBasket.csproj",
+      "projectPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj",
       "packagesPath": "C:\\Users\\Maurice\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\Project_2019\\App_v2\\ShopBasket\\ShopBasket\\obj\\",
+      "outputPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

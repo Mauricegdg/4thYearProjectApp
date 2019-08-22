@@ -2277,11 +2277,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\Project_2019\\App_v2\\ShopBasket\\ShopBasket.Android\\ShopBasket.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket.Android\\ShopBasket.Android.csproj",
       "projectName": "ShopBasket.Android",
-      "projectPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\Project_2019\\App_v2\\ShopBasket\\ShopBasket.Android\\ShopBasket.Android.csproj",
+      "projectPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket.Android\\ShopBasket.Android.csproj",
       "packagesPath": "C:\\Users\\Maurice\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\Project_2019\\App_v2\\ShopBasket\\ShopBasket.Android\\obj\\",
+      "outputPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2302,8 +2302,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\Project_2019\\App_v2\\ShopBasket\\ShopBasket\\ShopBasket.csproj": {
-              "projectPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\Project_2019\\App_v2\\ShopBasket\\ShopBasket\\ShopBasket.csproj"
+            "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj": {
+              "projectPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj"
             }
           }
         }
