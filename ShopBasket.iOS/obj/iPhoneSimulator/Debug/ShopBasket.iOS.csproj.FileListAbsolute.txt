@@ -254,7 +254,6 @@ C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\ShopBasket.dll
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\ShopBasket.pdb
-C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\ShopBasket.dll.mdb
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items

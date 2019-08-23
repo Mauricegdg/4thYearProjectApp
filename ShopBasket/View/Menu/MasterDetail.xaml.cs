@@ -21,7 +21,7 @@ namespace ShopBasket.View.Menu
 
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var item = e.SelectedItem as MasterMenuItems;
+            MasterMenuItems item = e.SelectedItem as MasterMenuItems;
             if (item != null)
             {
                 Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));

@@ -146,4 +146,37 @@
       <Name>ShopBasket</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Baby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Pantry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HouseholdCleaning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HomeOutdoor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\frozenfood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HealthBeauty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ElectronicsOffice.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Browse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Beverages.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Basket.png" />
+  </ItemGroup>
 </Project>
