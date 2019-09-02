@@ -25,9 +25,12 @@ namespace ShopBasket.View.Menu
         }
         void SetItems()
         {
-            Items = new List<MasterMenuItems>();
-            Items.Add(new MasterMenuItems("Home", "icon.png", Color.White, typeof(Home)));
-            Items.Add(new MasterMenuItems("Basket", "icon.png", Color.White, typeof(Basket)));
+            Items = new List<MasterMenuItems>
+            {
+                new MasterMenuItems("Home", "Sale.png", Color.White, typeof(Home)),
+                new MasterMenuItems("Basket", "Basket.png", Color.White, typeof(Basket)),
+                new MasterMenuItems("Browse", "Browse.png", Color.White, typeof(Browse))
+            };
             listview.ItemsSource = Items;
         }
 
