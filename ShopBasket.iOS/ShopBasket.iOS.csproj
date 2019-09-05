@@ -179,4 +179,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Basket.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Settings.png" />
+  </ItemGroup>
 </Project>

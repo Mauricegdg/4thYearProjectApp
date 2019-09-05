@@ -9,15 +9,17 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Text;
+using Xamarin.Essentials;
 
 namespace ShopBasket.ViewModels
 {
     
     public class ProducListViewModel : INotifyPropertyChanged
     {
-        //public List<ProductListModel> ProdList { get; set; }
-        //ProdList = new ObservableCollection<ProductListModel>();
+        string StoreID = Preferences.Get("Store_IDs", "");
+
         ObservableCollection<ProductListModel>_prodList;
+
         public ObservableCollection<ProductListModel> ProdList
         {
             get
@@ -43,51 +45,85 @@ namespace ShopBasket.ViewModels
         public ProducListViewModel()
         {
 
-           GetProductsOnSpecial();
+           GetProductsOnSpecial(StoreID);
 
         }
 
-        public async void GetProductsOnSpecial()
+        public async void GetProductsOnSpecial(string StoreID)
         {
-            
-
-            //ProdList = new List<ProductListModel>();
-
 
             //var Url = "ttp://shopbasket.azurewebsites.net/api/prodOnSpl";
             var Url = "http://10.0.2.2:5000/api/ProdOnSpl";
             HttpClient httpClient = new HttpClient();
-
+            var preProdList = new List<ProductListModel>();
             
-
-            var response = await httpClient.GetAsync(Url);
-
-            if (response.IsSuccessStatusCode)
+            if (StoreID != "")
             {
+                string[] StoreIDs = StoreID.Split(',');
+               
 
-                var content2 = await response.Content.ReadAsStringAsync();
-                if (content2 == "")
+                for (int i = 0; i < StoreIDs.Length-1; i++)
                 {
+                    var response = await httpClient.GetAsync(Url + "/" + StoreIDs[i]);
 
+                    if (response.IsSuccessStatusCode)
+                    {
+
+                        var content2 = await response.Content.ReadAsStringAsync();
+                        if (content2 == "")
+                        {
+                            // DO NOTHING!!!!!!!!!!!
+                        }
+                        else
+                        {
+                            
+                            var prodInfo = JsonConvert.DeserializeObject<ObservableCollection<ProductListModel>>(content2);
+
+                            for (int k = 0; k < prodInfo.Count ; k++)
+                            {
+                                if (preProdList.Count == 0)
+                                {
+                                    preProdList.Add(prodInfo[k]);
+
+                                }
+                                else
+                                {
+                                    for (int j = 0; j < preProdList.Count; j++)
+                                    {
+                                        if (prodInfo[k].Barcode == preProdList[j].Barcode)
+                                        {
+                                            preProdList.RemoveAt(j);
+                                            preProdList.Add(prodInfo[k]);
+
+                                        }
+                                        else
+                                        {
+                                            preProdList.Add(prodInfo[k]);
+
+                                        }
+                                    }
+                                }
+                                
+                            }
+
+                            ProdList = new ObservableCollection<ProductListModel>(preProdList);
+
+                        }
+
+                    }
+
+                    else
+                    {
+                        Debug.WriteLine("An error occured while loading data"); // Sever ERROR 
+                        
+                    }
                 }
 
-
-               // ProdList = new ObservableCollection<ProductListModel>();
-
-                var prodInfo = JsonConvert.DeserializeObject<List<ProductListModel>>(content2);
-
-                ProdList = new ObservableCollection<ProductListModel>(prodInfo);
-                //ProdList.Add(new ProductListModel(prodInfo));
-
-                Debug.WriteLine("{0}",ProdList[0].ProdName);
-
             }
-
             else
             {
-                Debug.WriteLine("An error occured while loading data");
+                    // Debug  message no stores found.
             }
-
             
         }
 

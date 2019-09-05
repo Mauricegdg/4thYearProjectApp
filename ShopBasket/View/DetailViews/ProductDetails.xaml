@@ -57,8 +57,12 @@
                                    Grid.Row="1"
                                    VerticalOptions="Start"
                                    Text="{Binding Current_Price}"/>
-                                       
-                                    
+                                    <Label Grid.Column="1"
+                                   Grid.Row="1"
+                                   VerticalOptions="End"
+                                   Text="{Binding Distance}"/>
+
+
 
 
                                 </Grid>

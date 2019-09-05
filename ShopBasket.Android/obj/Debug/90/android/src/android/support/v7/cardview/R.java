@@ -4613,13 +4613,13 @@ containing a value of this type.
         public static int abc_textfield_search_material=0x7f020052;
         public static int abc_vector_test=0x7f020053;
         public static int avd_hide_password=0x7f020054;
-        public static int avd_hide_password_1=0x7f020140;
-        public static int avd_hide_password_2=0x7f020141;
-        public static int avd_hide_password_3=0x7f020142;
+        public static int avd_hide_password_1=0x7f020141;
+        public static int avd_hide_password_2=0x7f020142;
+        public static int avd_hide_password_3=0x7f020143;
         public static int avd_show_password=0x7f020055;
-        public static int avd_show_password_1=0x7f020143;
-        public static int avd_show_password_2=0x7f020144;
-        public static int avd_show_password_3=0x7f020145;
+        public static int avd_show_password_1=0x7f020144;
+        public static int avd_show_password_2=0x7f020145;
+        public static int avd_show_password_3=0x7f020146;
         public static int baby=0x7f020056;
         public static int basket=0x7f020057;
         public static int beverages=0x7f020058;
@@ -4846,14 +4846,15 @@ containing a value of this type.
         public static int notification_bg_normal=0x7f020135;
         public static int notification_bg_normal_pressed=0x7f020136;
         public static int notification_icon_background=0x7f020137;
-        public static int notification_template_icon_bg=0x7f02013e;
-        public static int notification_template_icon_low_bg=0x7f02013f;
+        public static int notification_template_icon_bg=0x7f02013f;
+        public static int notification_template_icon_low_bg=0x7f020140;
         public static int notification_tile_bg=0x7f020138;
         public static int notify_panel_notification_icon_bg=0x7f020139;
         public static int pantry=0x7f02013a;
         public static int sale=0x7f02013b;
-        public static int tooltip_frame_dark=0x7f02013c;
-        public static int tooltip_frame_light=0x7f02013d;
+        public static int settings=0x7f02013c;
+        public static int tooltip_frame_dark=0x7f02013d;
+        public static int tooltip_frame_light=0x7f02013e;
     }
     public static final class id {
         public static int ALT=0x7f0a0039;

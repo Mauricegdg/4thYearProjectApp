@@ -25,5 +25,7 @@ namespace ShopBasket.Models
         public string StoreImageUrl { get; set; }
 
         public int StoreID { get; set; }
+
+        public string Distance { get; set; }
     }
 }

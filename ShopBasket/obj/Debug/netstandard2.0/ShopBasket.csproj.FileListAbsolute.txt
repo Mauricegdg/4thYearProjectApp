@@ -85,7 +85,6 @@ C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.csproj.CoreCompileInputs.cache
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.AssemblyInfoInputs.cache
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.AssemblyInfo.cs
-C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Maurice\Desktop\IT 4th year\Project IV\4thYearProjectApp\ShopBasket\bin\Debug\netstandard2.0\ShopBasket.deps.json
 C:\Users\Maurice\Desktop\IT 4th year\Project IV\4thYearProjectApp\ShopBasket\bin\Debug\netstandard2.0\ShopBasket.dll
 C:\Users\Maurice\Desktop\IT 4th year\Project IV\4thYearProjectApp\ShopBasket\bin\Debug\netstandard2.0\ref\ShopBasket.dll
@@ -110,3 +109,10 @@ C:\Users\Maurice\Desktop\IT 4th year\Project IV\4thYearProjectApp\ShopBasket\obj
 C:\Users\Maurice\Desktop\IT 4th year\Project IV\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\ref\ShopBasket.dll
 C:\Users\Maurice\Desktop\IT 4th year\Project IV\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.pdb
 C:\Users\Maurice\Desktop\IT 4th year\Project IV\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\CategoryProducts.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\CategoryProducts.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.csproj.CopyComplete
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\Settings.xaml.g.cs

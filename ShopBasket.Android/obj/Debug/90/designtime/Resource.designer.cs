@@ -6422,6 +6422,9 @@ namespace ShopBasket.Droid
 			// aapt resource value: 0x7F010012
 			public const int Sale = 2130771986;
 			
+			// aapt resource value: 0x7F010013
+			public const int Settings = 2130771987;
+			
 			// aapt resource value: 0x7F09006F
 			public const int tooltip_frame_dark = 2131296367;
 			

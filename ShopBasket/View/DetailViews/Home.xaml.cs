@@ -24,6 +24,8 @@ namespace ShopBasket.View.DetailViews
         public Home()
         {
             InitializeComponent();
+            StoresInRange SETstoreRanges = new StoresInRange();
+            SETstoreRanges.SetStoresInRange();
             //OnSpecialList();
             //GetProductsOnSpecial();
             BindingContext = new ProducListViewModel();

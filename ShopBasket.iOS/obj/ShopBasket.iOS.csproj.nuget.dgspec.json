@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maurice\\Desktop\\IT 4th year\\Project IV\\4thYearProjectApp\\ShopBasket.iOS\\ShopBasket.iOS.csproj": {}
+    "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket.iOS\\ShopBasket.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maurice\\Desktop\\IT 4th year\\Project IV\\4thYearProjectApp\\ShopBasket.iOS\\ShopBasket.iOS.csproj": {
+    "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket.iOS\\ShopBasket.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maurice\\Desktop\\IT 4th year\\Project IV\\4thYearProjectApp\\ShopBasket.iOS\\ShopBasket.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket.iOS\\ShopBasket.iOS.csproj",
         "projectName": "ShopBasket.iOS",
-        "projectPath": "C:\\Users\\Maurice\\Desktop\\IT 4th year\\Project IV\\4thYearProjectApp\\ShopBasket.iOS\\ShopBasket.iOS.csproj",
+        "projectPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket.iOS\\ShopBasket.iOS.csproj",
         "packagesPath": "C:\\Users\\Maurice\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maurice\\Desktop\\IT 4th year\\Project IV\\4thYearProjectApp\\ShopBasket.iOS\\obj\\",
+        "outputPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Maurice\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\Maurice\\Desktop\\IT 4th year\\Project IV\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj": {
-                "projectPath": "C:\\Users\\Maurice\\Desktop\\IT 4th year\\Project IV\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj"
+              "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj": {
+                "projectPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj"
               }
             }
           }
@@ -81,17 +81,17 @@
         }
       }
     },
-    "C:\\Users\\Maurice\\Desktop\\IT 4th year\\Project IV\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj": {
+    "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maurice\\Desktop\\IT 4th year\\Project IV\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj",
+        "projectUniqueName": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj",
         "projectName": "ShopBasket",
-        "projectPath": "C:\\Users\\Maurice\\Desktop\\IT 4th year\\Project IV\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj",
+        "projectPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket\\ShopBasket.csproj",
         "packagesPath": "C:\\Users\\Maurice\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maurice\\Desktop\\IT 4th year\\Project IV\\4thYearProjectApp\\ShopBasket\\obj\\",
+        "outputPath": "C:\\Users\\Maurice\\Desktop\\Nmmu IT\\4th Final Year\\4thYearProjectApp\\ShopBasket\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [

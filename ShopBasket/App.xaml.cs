@@ -1,8 +1,10 @@
 ﻿using ShopBasket.View;
 using ShopBasket.View.Menu;
+using ShopBasket.View.DetailViews;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace ShopBasket
 {
@@ -13,6 +15,7 @@ namespace ShopBasket
             InitializeComponent();
 
             MainPage = new NavigationPage(new LoginPage());
+            Preferences.Set("Store_Range", "15");
         }
 
         protected override void OnStart()
