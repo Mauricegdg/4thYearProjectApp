@@ -51,7 +51,7 @@ namespace ShopBasket.View.DetailViews
         private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var details = e.Item as ProductByCat;
-            await Navigation.PushAsync(new ProductDetails(details.ProdName, details.ProdImageUrl, details.ProdDescription, details.Barcode));
+            await Navigation.PushAsync(new ProductDetails(details.ProdName, details.ProdImg, details.ProdDescription, details.Barcode));
         }
     }
 }

@@ -11,16 +11,20 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-//using ShopBasket.Services;
+
 using ShopBasket.ViewModels;
 using ShopBasket.Models;
+using System.Collections.ObjectModel;
 
 namespace ShopBasket.View.DetailViews
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Home : ContentPage
     {
-       // List<ProductsOnSpecial> ProductList;
+       
+        private ProducListViewModel plvm = new ProducListViewModel();
+        
+
         public Home()
         {
             InitializeComponent();
@@ -29,6 +33,10 @@ namespace ShopBasket.View.DetailViews
             //OnSpecialList();
             //GetProductsOnSpecial();
             BindingContext = new ProducListViewModel();
+
+
+            
+            
 
            // RestAPI restAPI = new RestAPI();
             
@@ -51,13 +59,18 @@ namespace ShopBasket.View.DetailViews
         private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var details = e.Item as ProductListModel;
-            await Navigation.PushAsync(new ProductDetails(details.ProdName, details.ProdImageUrl, details.ProdDescription, details.Barcode));
+            await Navigation.PushAsync(new ProductDetails(details.ProdName, details.ProdImg, details.ProdDescription, details.Barcode));
         }
 
         private void MainSearchBar_SearchButtonPressed(object sender, EventArgs e)
         {
-            string KeyWord = MainSearchBar.Text;
+            var KeyWord = MainSearchBar.Text;
 
+           prodList.ItemsSource =  plvm.GetSearchedProducts(KeyWord);
+            if (prodList.ItemsSource == null)
+            {
+                DisplayAlert("No Products found", "No products found.", "OK");
+            }
             
         }
 

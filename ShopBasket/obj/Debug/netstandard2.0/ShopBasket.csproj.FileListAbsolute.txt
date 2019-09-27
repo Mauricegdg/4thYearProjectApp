@@ -116,3 +116,5 @@ C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\bin
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\bin\Debug\netstandard2.0\Mono.Android.xml
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.csproj.CopyComplete
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\Settings.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\View\DetailViews\SearchOrScan.xaml.g.cs
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket\obj\Debug\netstandard2.0\ShopBasket.csprojAssemblyReference.cache

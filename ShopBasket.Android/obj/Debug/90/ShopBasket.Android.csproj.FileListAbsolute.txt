@@ -2217,3 +2217,4 @@ C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.And
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.Android\obj\Debug\90\android\assets\System.Web.Services.pdb
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.Android\obj\Debug\90\android\assets\System.Xml.Linq.pdb
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.Android\obj\Debug\90\android\assets\System.Xml.pdb
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.Android\obj\Debug\90\res\drawable-hdpi\scan.png

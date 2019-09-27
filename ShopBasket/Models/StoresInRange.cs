@@ -37,70 +37,54 @@ namespace ShopBasket.Models
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public StoresInRange()
-        {
-            
-        }
-
-
         public async void SetStoresInRange()
         {
-            var request = new GeolocationRequest(GeolocationAccuracy.Medium);
-            var Currentlocation = await Geolocation.GetLocationAsync(request);
+            var request = new GeolocationRequest(GeolocationAccuracy.Medium);           // Request the location
+            var Currentlocation = await Geolocation.GetLocationAsync(request);          //Emulator does not give current location
             string StoreIDs = "";
-            Preferences.Set("Store_IDs", StoreIDs);
-            
+            Preferences.Set("Store_IDs", StoreIDs);                                     //Sets the stores found in range to 0 because this methos is only called when user opens application
 
-
-            //var Url = "http://shopbasket.azurewebsites.net/api/storeLocations";
-            var Url = "http://10.0.2.2:5000/api/storeLocations";
+            //var Url = "http://shopbasket.azurewebsites.net/api/storeLocations";       //Used when API is deployed.
+            var Url = "http://10.0.2.2:5000/api/storeLocations";                        //Used for development testing with hosing locally
 
             HttpClient httpClient = new HttpClient();
 
-
-            var response = await httpClient.GetAsync(Url);
+            var response = await httpClient.GetAsync(Url);                              //Gets response from API
 
             if (response.IsSuccessStatusCode)
             {
-
-                var content2 = await response.Content.ReadAsStringAsync();
-                if (content2 == "")
+                var content = await response.Content.ReadAsStringAsync();
+                if (content == "")
                 {
-                    Preferences.Set("Store_IDs", "1,"); //for mean time*********
+                    Preferences.Set("Store_IDs", "1,"); //for mean time********* 
                     //debug code MISSING
                 }
                 else
                 {
-                    var StoreInfo = JsonConvert.DeserializeObject<List<StoreLocations>>(content2);
-                    StoreList = new ObservableCollection<StoreLocations>(StoreInfo);
-
-                    foreach (var Store in StoreList)
+                    var StoreInfo = JsonConvert.DeserializeObject<List<StoreLocations>>(content);       //Add content from API call to list of store information
+                  
+                    foreach (var Store in StoreInfo)                                                  //Loop through list of stores.
                     {
                         var storeLocation = new Location(double.Parse(Store.Latitude), double.Parse(Store.Longitude));
-                        var testLocation = new Location(-33.96842050869081, 25.62738453084694); // test****
+                        var testLocation = new Location(-33.96842050869081, 25.62738453084694);                                      // test**** Emulator does not give current location
 
-                        double distance = Math.Round(testLocation.CalculateDistance(storeLocation, DistanceUnits.Kilometers), 2);
+                        double distance = Math.Round(testLocation.CalculateDistance(storeLocation, DistanceUnits.Kilometers), 2);      //Calculating distance as crow flies
 
-                        if (distance <= double.Parse(Preferences.Get("Store_Range", "15")))
+                        if (distance <= double.Parse(Preferences.Get("Store_Range", "15")))                                           //Check if store is in selected range the user has set in settings
                         {
-                            StoreIDs += Store.StoreID.ToString() + ",";
+                            StoreIDs += Store.StoreID.ToString() + ",";                                                               //Add store ID to string
                         }
                     }
 
                     if (StoreIDs != "")
                     {
-                        Preferences.Set("Store_IDs", StoreIDs);
+                        Preferences.Set("Store_IDs", StoreIDs);                    //check if sting is not empty and add the string to preferences.
                     }
                     else
                     {
-                        Preferences.Set("Store_IDs", "");
+                        Preferences.Set("Store_IDs", "");                          //insert empty string to prefrences
                     }
-                    
-
                 }
-
-
-
             }
             else
             {

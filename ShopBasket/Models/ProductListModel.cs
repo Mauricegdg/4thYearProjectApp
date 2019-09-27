@@ -8,7 +8,7 @@ namespace ShopBasket.Models
     {
         public string ProdName { get; set; }
         public string CatName { get; set; }
-        public string ProdImageUrl { get; set; }
+        public byte[] ProdImg { get; set; }
 
         public string ProdDescription { get; set; }
 

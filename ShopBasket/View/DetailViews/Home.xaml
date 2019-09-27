@@ -21,6 +21,7 @@
         
         <ListView ItemsSource="{Binding ProdList}"
                   HasUnevenRows="True"
+                  x:Name="prodList"
                   SeparatorVisibility="None"
                   ItemTapped="ListView_ItemTapped">
 
@@ -44,7 +45,7 @@
                                     Aspect="AspectFill"
                                     WidthRequest="66"
                                     Grid.RowSpan="2"
-                                    Source="{Binding ProdImageUrl}"/>
+                                    Source="{Binding ProdImage}"/>
 
                             
                             <Label Grid.Column="1"

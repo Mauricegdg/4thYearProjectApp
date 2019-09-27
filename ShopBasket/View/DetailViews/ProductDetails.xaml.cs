@@ -2,6 +2,7 @@
 using ShopBasket.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,14 +15,14 @@ namespace ShopBasket.View.DetailViews
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProductDetails : ContentPage
     {
-        public ProductDetails(string Name, string Image, string Description, string Barcode)
+        public ProductDetails(string Name, byte[] image, string Description, string Barcode)
         {
             InitializeComponent();
             ProdName.Text = Name;
-            ProdImage.Source = new UriImageSource()
-            {
-                Uri = new Uri(Image)
-            };
+            
+            MemoryStream ms = new MemoryStream(image);
+            ProdImage.Source = ImageSource.FromStream(() => ms);
+
             ProdDescription.Text = Description;
 
             ProductListModel productListModel = new ProductListModel();
