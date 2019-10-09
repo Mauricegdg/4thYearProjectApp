@@ -2721,6 +2721,12 @@ namespace ShopBasket.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_id = global::ShopBasket.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::ShopBasket.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_layout = global::ShopBasket.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::ZXing.Net.Mobile.Forms.Android.Resource.Layout.zxingscanneractivitylayout = global::ShopBasket.Droid.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Net.Mobile.Forms.Android.Resource.Layout.zxingscannerfragmentlayout = global::ShopBasket.Droid.Resource.Layout.zxingscannerfragmentlayout;
+			global::ZXing.Net.Mobile.Forms.Android.Resource.String.library_name = global::ShopBasket.Droid.Resource.String.library_name;
+			global::ZXing.Mobile.Resource.Id.contentFrame = global::ShopBasket.Droid.Resource.Id.contentFrame;
+			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::ShopBasket.Droid.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::ShopBasket.Droid.Resource.Layout.zxingscannerfragmentlayout;
 		}
 		
 		public partial class Animation
@@ -5730,13 +5736,16 @@ namespace ShopBasket.Droid
 			public const int Baby = 2130771970;
 			
 			// aapt resource value: 0x7F010003
-			public const int Basket = 2130771971;
+			public const int barcode = 2130771971;
 			
 			// aapt resource value: 0x7F010004
-			public const int Beverages = 2130771972;
+			public const int Basket = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int Browse = 2130771973;
+			public const int Beverages = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int Browse = 2130771974;
 			
 			// aapt resource value: 0x7F090057
 			public const int design_bottom_navigation_item_background = 2131296343;
@@ -5756,20 +5765,20 @@ namespace ShopBasket.Droid
 			// aapt resource value: 0x7F09005C
 			public const int design_snackbar_background = 2131296348;
 			
-			// aapt resource value: 0x7F010006
-			public const int ElectronicsOffice = 2130771974;
-			
 			// aapt resource value: 0x7F010007
-			public const int frozenfood = 2130771975;
+			public const int ElectronicsOffice = 2130771975;
 			
 			// aapt resource value: 0x7F010008
-			public const int HealthBeauty = 2130771976;
+			public const int frozenfood = 2130771976;
 			
 			// aapt resource value: 0x7F010009
-			public const int HomeOutdoor = 2130771977;
+			public const int HealthBeauty = 2130771977;
 			
 			// aapt resource value: 0x7F010010
-			public const int HouseholdCleaning = 2130771984;
+			public const int HomeOutdoor = 2130771984;
+			
+			// aapt resource value: 0x7F010011
+			public const int HouseholdCleaning = 2130771985;
 			
 			// aapt resource value: 0x7F090055
 			public const int ic_audiotrack_dark = 2131296341;
@@ -6416,17 +6425,17 @@ namespace ShopBasket.Droid
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010011
-			public const int Pantry = 2130771985;
-			
 			// aapt resource value: 0x7F010012
-			public const int Sale = 2130771986;
+			public const int Pantry = 2130771986;
 			
 			// aapt resource value: 0x7F010013
-			public const int scan = 2130771987;
+			public const int Sale = 2130771987;
 			
 			// aapt resource value: 0x7F010014
-			public const int Settings = 2130771988;
+			public const int scan = 2130771988;
+			
+			// aapt resource value: 0x7F010015
+			public const int Settings = 2130771989;
 			
 			// aapt resource value: 0x7F09006F
 			public const int tooltip_frame_dark = 2131296367;
@@ -6566,6 +6575,9 @@ namespace ShopBasket.Droid
 			
 			// aapt resource value: 0x7F0C001F
 			public const int content = 2131492895;
+			
+			// aapt resource value: 0x7F020224
+			public const int contentFrame = 2130838052;
 			
 			// aapt resource value: 0x7F0C0020
 			public const int contentPanel = 2131492896;
@@ -7482,6 +7494,12 @@ namespace ShopBasket.Droid
 			// aapt resource value: 0x7F030003
 			public const int Toolbar = 2130903043;
 			
+			// aapt resource value: 0x7F030087
+			public const int zxingscanneractivitylayout = 2130903175;
+			
+			// aapt resource value: 0x7F030088
+			public const int zxingscannerfragmentlayout = 2130903176;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -7654,6 +7672,9 @@ namespace ShopBasket.Droid
 			
 			// aapt resource value: 0x7F15002E
 			public const int hide_bottom_view_on_scroll_behavior = 2132082734;
+			
+			// aapt resource value: 0x7F100080
+			public const int library_name = 2131755136;
 			
 			// aapt resource value: 0x7F150028
 			public const int mr_button_content_description = 2132082728;

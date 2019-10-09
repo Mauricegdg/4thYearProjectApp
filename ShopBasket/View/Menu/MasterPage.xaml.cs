@@ -30,7 +30,7 @@ namespace ShopBasket.View.Menu
                 new MasterMenuItems("Home", "Sale.png", Color.White, typeof(Home)),
                 new MasterMenuItems("Basket", "Basket.png", Color.White, typeof(Basket)),
                 new MasterMenuItems("Browse", "Browse.png", Color.White, typeof(Browse)),
-                new MasterMenuItems("Search Or Scan", "scan.png", Color.White, typeof(SearchOrScan)),
+                new MasterMenuItems("Search Or Scan", "scan.png", Color.White, typeof(MainSearch)),
                 new MasterMenuItems("Settings", "Settings.png", Color.White, typeof(Settings))
             };
             listview.ItemsSource = Items;

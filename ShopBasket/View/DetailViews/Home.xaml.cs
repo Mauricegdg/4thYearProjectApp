@@ -15,6 +15,7 @@ using Xamarin.Forms.Xaml;
 using ShopBasket.ViewModels;
 using ShopBasket.Models;
 using System.Collections.ObjectModel;
+using System.IO;
 
 namespace ShopBasket.View.DetailViews
 {
@@ -58,7 +59,7 @@ namespace ShopBasket.View.DetailViews
 
         private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var details = e.Item as ProductListModel;
+            var details = e.Item as ProductListModelDisplay;
             await Navigation.PushAsync(new ProductDetails(details.ProdName, details.ProdImg, details.ProdDescription, details.Barcode));
         }
 
@@ -71,6 +72,27 @@ namespace ShopBasket.View.DetailViews
             {
                 DisplayAlert("No Products found", "No products found.", "OK");
             }
+            
+        }
+
+        private void ProdList_ItemAppearing(object sender, ItemVisibilityEventArgs e)
+        {
+            //var details = e.Item as ProductListModel;
+
+            //MemoryStream ms = new MemoryStream(details.ProdImg);
+            //Image img = new Image();
+            //img.Source = ImageSource.FromStream(() => ms);
+
+            //ProductListModelDisplay NewList = new ProductListModelDisplay()
+            //{
+            //    Barcode = details.Barcode,
+            //    CatName = details.CatName,
+            //    ProdDescription = details.ProdDescription,
+            //    ProdName = details.ProdName,
+            //    ProdImage = img
+            //};
+
+             
             
         }
 

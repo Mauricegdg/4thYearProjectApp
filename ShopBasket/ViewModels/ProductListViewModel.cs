@@ -86,12 +86,17 @@ namespace ShopBasket.ViewModels
                             {
                                 if (ProdList == null)                                              
                                 {
-                                    
-                                        MemoryStream ms = new MemoryStream(prodInfo[k].ProdImg);
+                                        ProdList = prodInfo;
+
+                                    for (int p = 0; p < prodInfo.Count; p++)
+                                    {
+
+                                        MemoryStream ms = new MemoryStream(prodInfo[p].ProdImg);
                                         Image image = new Image();
                                         image.Source = ImageSource.FromStream(() => ms);
-                                        prodInfo[k].ProdImage = image;
-                                        ProdList.Add(prodInfo[k]);
+                                        
+                                        ProdList[p].ProdImage = image;
+                                    }
                                     
                                         
 

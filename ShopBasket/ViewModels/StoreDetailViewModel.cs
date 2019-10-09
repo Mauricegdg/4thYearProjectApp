@@ -19,6 +19,7 @@ namespace ShopBasket.ViewModels
     public class StoreDetailViewModel : INotifyPropertyChanged
     {
         ObservableCollection<StoreDetailModel> _storeList;
+        List<StoreDetailModel> prestoreList = new List<StoreDetailModel>();
 
         public ObservableCollection<StoreDetailModel> StoreList
         {
@@ -50,6 +51,9 @@ namespace ShopBasket.ViewModels
 
         public async void GetStoreDetails(ProductListModel productListModel)
         {
+            string StoreID = Preferences.Get("Store_IDs", "");
+            string[] StoreIDs = StoreID.Split(',');
+
             var request = new GeolocationRequest(GeolocationAccuracy.Medium);
             var Currentlocation = await Geolocation.GetLocationAsync(request);
 
@@ -81,7 +85,23 @@ namespace ShopBasket.ViewModels
                 else
                 {
                     var StoreInfo = JsonConvert.DeserializeObject<List<StoreDetailModel>>(content2);
-                    StoreList = new ObservableCollection<StoreDetailModel>(StoreInfo);
+
+                    foreach (var store in StoreInfo)
+                    {
+                        var storeLocation = new Location(double.Parse(store.Latitude), double.Parse(store.longitude));
+                       var testLocation = new Location(-33.96842050869081, 25.62738453084694); //test****
+
+                       double distance = Math.Round(testLocation.CalculateDistance(storeLocation, DistanceUnits.Kilometers), 2);
+                        for (int i = 0; i < StoreIDs.Length - 1; i++)
+                        {
+                            if (store.StoreID == i+1)
+                            {
+                                prestoreList.Add(store);
+                            }
+                        }
+                        
+                    }
+                    StoreList = new ObservableCollection<StoreDetailModel>(prestoreList);
 
                     foreach (var Store in StoreList)
                     {
@@ -91,6 +111,7 @@ namespace ShopBasket.ViewModels
                         double distance = Math.Round(testLocation.CalculateDistance(storeLocation, DistanceUnits.Kilometers),2);
 
                         Store.Distance = distance.ToString() +" Km";
+                        //StoreList.Remove(Store);
                     }
 
 

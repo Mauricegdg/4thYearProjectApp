@@ -23,7 +23,8 @@
                   HasUnevenRows="True"
                   x:Name="prodList"
                   SeparatorVisibility="None"
-                  ItemTapped="ListView_ItemTapped">
+                  ItemTapped="ListView_ItemTapped"
+                  ItemAppearing="ProdList_ItemAppearing">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
