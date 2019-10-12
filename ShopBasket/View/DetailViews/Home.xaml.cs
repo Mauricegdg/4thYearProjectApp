@@ -35,7 +35,7 @@ namespace ShopBasket.View.DetailViews
             //GetProductsOnSpecial();
             BindingContext = new ProducListViewModel();
 
-
+            
             
             
 
@@ -79,9 +79,11 @@ namespace ShopBasket.View.DetailViews
         {
             //var details = e.Item as ProductListModel;
 
-            //MemoryStream ms = new MemoryStream(details.ProdImg);
-            //Image img = new Image();
+           // MemoryStream ms = new MemoryStream(details.ProdImg);
+           // Image img = new Image();
             //img.Source = ImageSource.FromStream(() => ms);
+
+            
 
             //ProductListModelDisplay NewList = new ProductListModelDisplay()
             //{

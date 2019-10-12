@@ -12,7 +12,7 @@ namespace ShopBasket.Models
         public string CatName { get; set; }
         public byte[] ProdImg { get; set; }
 
-        public Image ProdImage { get; set; }
+        public ImageSource ProdImage { get; set; }
         
 
         public string ProdDescription { get; set; }

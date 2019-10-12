@@ -5,15 +5,19 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Text;
+using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace ShopBasket.ViewModels.sp_Models
 {
     public class GetProductsByCategory : INotifyPropertyChanged
     {
         ObservableCollection<ProductByCat> _prodList;
+        ObservableCollection<ProductByCat> pre_prodList = new ObservableCollection<ProductByCat>();
         public ObservableCollection<ProductByCat> ProdList
         {
             get
@@ -45,7 +49,8 @@ namespace ShopBasket.ViewModels.sp_Models
 
         public async void GetProductsByCatID(int catID)
         {
-
+            string StoreID = Preferences.Get("Store_IDs", "");
+            string[] StoreIDs = StoreID.Split(',');
 
             //ProdList = new List<ProductListModel>();
 
@@ -56,35 +61,79 @@ namespace ShopBasket.ViewModels.sp_Models
 
 
 
-            var response = await httpClient.GetAsync(Url+"/"+catID);
+            var response = await httpClient.GetAsync(Url + "/" + catID);
 
             if (response.IsSuccessStatusCode)
             {
 
-                var content2 = await response.Content.ReadAsStringAsync();
-                if (content2 == "")
+                var content = await response.Content.ReadAsStringAsync();
+                if (content == "")
                 {
 
                 }
+                else
+                {
+                    var prodInfo = JsonConvert.DeserializeObject<List<ProductByCat>>(content);  //Extact data to list of products
+
+                    foreach (var prod in prodInfo)
+                    {
 
 
-                // ProdList = new ObservableCollection<ProductListModel>();
+                        for (int i = 0; i < StoreIDs.Length - 1; i++)
+                        {
+                            if (prod.StoreID == i + 1)
+                            {
+                                if (pre_prodList.Count == 0)
+                                {
+                                    
+                                    pre_prodList.Add(prod);
+                                }
+                                else
+                                {
+                                    bool duplicate = false;
+                                    for (int j = 0; j < pre_prodList.Count; j++)
+                                    {
+                                        if (prod.Barcode == pre_prodList[j].Barcode)      // Loops through temp list and elinates duplicate products
+                                        {
+                                            duplicate = true;
+                                            break;
+                                        }
 
-                var prodInfo = JsonConvert.DeserializeObject<List<ProductByCat>>(content2);
+                                    }
 
-                ProdList = new ObservableCollection<ProductByCat>(prodInfo);
-                //ProdList.Add(new ProductListModel(prodInfo));
 
-               
+                                    if (duplicate == false)
+                                    {
+                                       
+                                        pre_prodList.Add(prod);
+                                    }
+                                }
 
+                            }
+                        }
+
+                       
+
+
+
+                    }
+                    ProdList = pre_prodList;
+                    
+
+                    for (int k = 0; k < pre_prodList.Count; k++)
+                    {
+                        MemoryStream ms = new MemoryStream(pre_prodList[k].ProdImg);
+                        ProdList[k].ProdImage = ImageSource.FromStream(() => ms);
+                       
+                    }
+                    
+
+                }
             }
-
             else
             {
                 Debug.WriteLine("An error occured while loading data");
             }
-
-
         }
     }
 }

@@ -5,9 +5,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ShopBasket.View.DetailViews.ProductDetails"
+             xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms"
              Title="Product Details">
-    
-    <ContentView.Content>
+
+    <ContentPage.Content>
 
         <StackLayout x:Name="MasterStack" VerticalOptions="FillAndExpand">
 
@@ -17,6 +18,10 @@
                 <Label x:Name="ProdName" HorizontalTextAlignment="Center" />
                 <Label x:Name="ProdDescription" Margin="20,20" FontSize="Small"/>
 
+                <numeric:SfNumericUpDown x:Name="numericUpDown" Value="1" MaximumDecimalDigits="0" Margin="100,10" Minimum="1" Maximum="100"/>
+                <Button x:Name="AddToCart" Text="Add to Basket" FontSize="Small" HorizontalOptions="CenterAndExpand" Margin="20,0" ImageSource="Basket.png" Clicked="AddToCart_Clicked"/>
+
+
 
             </StackLayout>
 
@@ -24,8 +29,8 @@
 
                 <ListView ItemsSource="{Binding StoreList}"
                   HasUnevenRows="True"
-                  SeparatorVisibility="None"
-                  >
+                  SeparatorVisibility="None">
+
 
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -63,8 +68,6 @@
                                    Text="{Binding Distance}"/>
 
 
-
-
                                 </Grid>
 
                             </ViewCell>
@@ -75,5 +78,6 @@
             </StackLayout>
 
         </StackLayout>
-    </ContentView.Content>
+
+    </ContentPage.Content>
 </ContentPage>

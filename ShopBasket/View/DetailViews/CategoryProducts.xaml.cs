@@ -30,16 +30,16 @@ namespace ShopBasket.View.DetailViews
                 case 3:
                     Title = "Beverages";
                     break;
-                case 4:
+                case 7:
                     Title = "Electronics Office";
                     break;
-                case 5:
+                case 4:
                     Title = "Health & Beauty";
                     break;
-                case 6:
+                case 5:
                     Title = "Baby";
                     break;
-                case 7:
+                case 6:
                     Title = "Household & Cleaning";
                     break;
                 case 8:

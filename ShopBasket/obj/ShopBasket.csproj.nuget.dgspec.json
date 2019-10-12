@@ -53,6 +53,14 @@
               "target": "Package",
               "version": "[12.0.2, )"
             },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[7.2.0.1367, )"
+            },
+            "Syncfusion.Xamarin.SfNumericUpDown": {
+              "target": "Package",
+              "version": "[17.3.0.14, )"
+            },
             "Xam.Plugin.Connectivity": {
               "target": "Package",
               "version": "[3.2.0, )"

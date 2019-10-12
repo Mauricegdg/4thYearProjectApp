@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Forms;
 
 namespace ShopBasket.Models
 {
@@ -15,5 +16,11 @@ namespace ShopBasket.Models
         public string ProdDescription { get; set; }
 
         public string Barcode { get; set; }
+
+        public int StoreID { get; set; }
+
+        public ImageSource ProdImage { get; set; }
+
+
     }
 }

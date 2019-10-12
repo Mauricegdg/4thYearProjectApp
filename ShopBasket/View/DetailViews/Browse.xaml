@@ -41,25 +41,25 @@
 
             <Image Source="ElectronicsOffice.jpeg" Grid.Row="1" Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_7"/>
                 </Image.GestureRecognizers>
             </Image>
 
             <Image Source="HealthBeauty.jpg" Grid.Row="2" Grid.Column="0" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
                 </Image.GestureRecognizers>
             </Image>
 
             <Image Source="Baby.png" Grid.Row="2" Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
                 </Image.GestureRecognizers>
             </Image>
 
             <Image Source="HouseholdCleaning.jpg" Grid.Row="3" Grid.Column="0" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_8"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"/>
                 </Image.GestureRecognizers>
             </Image>
 

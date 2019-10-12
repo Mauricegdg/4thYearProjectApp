@@ -26,6 +26,7 @@ namespace ShopBasket.View.DetailViews
         private async void MainSearchBar_SearchButtonPressed(object sender, EventArgs e)
         {
             string seachedText = "";
+            seachedText += MainSearchBar.Text;
             if (seachedText == "")
             {
                 await DisplayAlert("Notification","No text entered","OK");
@@ -76,7 +77,7 @@ namespace ShopBasket.View.DetailViews
                     }
                     else
                     {
-                        var prodInfo = JsonConvert.DeserializeObject<ProductListModel>(content);
+                        var prodInfo = JsonConvert.DeserializeObject<ProductListModelDisplay>(content);
                         
                         await Navigation.PushAsync(new ProductDetails(prodInfo.ProdName, prodInfo.ProdImg, prodInfo.ProdDescription, prodInfo.Barcode));
                     }
@@ -84,20 +85,14 @@ namespace ShopBasket.View.DetailViews
             }
         }
 
-        private void Button_Clicked_1(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private async void ProdList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var details = e.Item as ProductListModelDisplay;
+            var details = e.Item as StoreDetailModel;
             await Navigation.PushAsync(new ProductDetails(details.ProdName, details.ProdImg, details.ProdDescription, details.Barcode));
         }
 
-        private void ProdList_ItemTapped_1(object sender, ItemTappedEventArgs e)
-        {
-
-        }
+        
     }
 }

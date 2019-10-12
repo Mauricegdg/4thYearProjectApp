@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "0459a566c7c590bd25fab5df55931ea1c96fe3f1"
+    "signature": "186abb89ef974e8673b2698a4610395ace60475e"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,6 +11,8 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2",
+          "Prism.Core": "7.2.0.1367",
+          "Syncfusion.Xamarin.SfNumericUpDown": "17.3.0.14",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
@@ -35,6 +37,46 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.2.23222"
+          }
+        }
+      },
+      "Prism.Core/7.2.0.1367": {
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {
+            "assemblyVersion": "7.2.0.1367",
+            "fileVersion": "7.2.0.1367"
+          }
+        }
+      },
+      "Syncfusion.Licensing/17.3.0.14": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "17.3.0.14",
+            "fileVersion": "17.3.0.14"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.3.0.14": {
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.14",
+          "Xamarin.Forms": "4.1.0.778454"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
+            "assemblyVersion": "17.3451.0.14",
+            "fileVersion": "17.3451.0.14"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfNumericUpDown/17.3.0.14": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.3.0.14",
+          "Xamarin.Forms": "4.1.0.778454"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfNumericUpDown.XForms.dll": {
+            "assemblyVersion": "17.3451.0.14",
+            "fileVersion": "17.3451.0.14"
           }
         }
       },
@@ -171,6 +213,34 @@
       "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "path": "newtonsoft.json/12.0.2",
       "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
+    },
+    "Prism.Core/7.2.0.1367": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vrz2M/Hr9ItcAUvnT+n76ak6qPQMgJfyTYFSKqphveb9ibohm70vzc0cWu1jkeBY5XPS9RbUluXMa9WQGM0kPw==",
+      "path": "prism.core/7.2.0.1367",
+      "hashPath": "prism.core.7.2.0.1367.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/17.3.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/ql9IWohGAT4rq74aGce6JXpPB/eBChut4Rt6bDSs9dC44mz0Q7FysFkYRARYwpL1hwInXTl17owFygF0NUM+A==",
+      "path": "syncfusion.licensing/17.3.0.14",
+      "hashPath": "syncfusion.licensing.17.3.0.14.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Core/17.3.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V6efm13cI4m7LjjTlToddEccPdo/WqliXg3HJQ2rLc2ITFrIiTTqgcnNX/ofKxm/oZKil2iY1YOzcW3h/SNghA==",
+      "path": "syncfusion.xamarin.core/17.3.0.14",
+      "hashPath": "syncfusion.xamarin.core.17.3.0.14.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfNumericUpDown/17.3.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Fkyezl881+wQgAYUCKcY+b0akM78Cvcvw45g8N+uXXZlBiwnpW6zlId8rvYmDsoT2j+6PC0WJitJFwAc/battA==",
+      "path": "syncfusion.xamarin.sfnumericupdown/17.3.0.14",
+      "hashPath": "syncfusion.xamarin.sfnumericupdown.17.3.0.14.nupkg.sha512"
     },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
