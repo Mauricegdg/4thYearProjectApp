@@ -92,10 +92,9 @@ namespace ShopBasket.ViewModels
                                     {
 
                                         MemoryStream ms = new MemoryStream(prodInfo[p].ProdImg);
-                                        Image image = new Image();
-                                        image.Source = ImageSource.FromStream(() => ms);
-                                        
-                                        ProdList[p].ProdImage = image;
+                                       
+                                        ProdList[p].ProdImage = ImageSource.FromStream(() => ms);
+
                                     }
                                     
                                         
@@ -118,10 +117,9 @@ namespace ShopBasket.ViewModels
                                     if (duplicate == false)
                                     {
                                         MemoryStream ms = new MemoryStream(prodInfo[k].ProdImg);
-                                        Image img = new Image();
-                                        img.Source = ImageSource.FromStream(() => ms);
+                                        
+                                        prodInfo[k].ProdImage  = ImageSource.FromStream(() => ms);
 
-                                        prodInfo[k].ProdImage = img;
                                         ProdList.Add(prodInfo[k]);
                                     }
                                 }              

@@ -15,9 +15,11 @@
 
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
-            <Button Text="Scan" ImageSource="scan.jpg" WidthRequest="300" Clicked="Button_Clicked"/>
-                <StackLayout>
+            <StackLayout>
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+                    <Button Text="Scan" ImageSource="scan.jpg" WidthRequest="300" Clicked="Button_Clicked"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="StartAndExpand">
                     <ListView ItemsSource="{Binding PList}"
                   HasUnevenRows="True"
                   x:Name="prodList"

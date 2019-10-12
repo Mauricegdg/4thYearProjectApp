@@ -10,7 +10,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -73,6 +73,8 @@ namespace ShopBasket.View
 
                     else
                     {
+                        Preferences.Set("UserName", logUser.UserName);
+
                         user = JsonConvert.DeserializeObject<User>(content2);
 
                         await DisplayAlert("Welcome", user.Name.ToString() +" "+ user.Surename.ToString() , "OK");

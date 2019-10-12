@@ -7,7 +7,13 @@ Plugin.Connectivity
 Plugin.CurrentActivity
 Plugin.Geolocator
 Plugin.Permissions
+Prism
 ShopBasket
+Syncfusion.Core.XForms.Android
+Syncfusion.Core.XForms
+Syncfusion.Licensing
+Syncfusion.SfNumericUpDown.XForms.Android
+Syncfusion.SfNumericUpDown.XForms
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime
@@ -59,3 +65,5 @@ ZXing.Net.Mobile.Forms
 zxing.portable
 ZXingNetMobile
 netstandard
+System.Resources.ResourceManager
+System.Reflection.Extensions

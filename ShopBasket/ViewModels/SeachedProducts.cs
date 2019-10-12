@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
+using Prism.Navigation;
 using ShopBasket.Models;
+using ShopBasket.View.DetailViews;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,16 +11,18 @@ using System.IO;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Text;
+using Xamarin.Essentials;
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 
 namespace ShopBasket.ViewModels
 {
-   public class SeachedProducts
+   public class SeachedProducts : INotifyPropertyChanged
     {
-        ObservableCollection<ProductListModelDisplay> _prodList;
-
-
-        public ObservableCollection<ProductListModelDisplay> PList
+        ObservableCollection<StoreDetailModel> _prodList;
+        List<StoreDetailModel> pre_prodList = new List<StoreDetailModel>();
+        
+        public ObservableCollection<StoreDetailModel> PList
         {
             get
             {
@@ -49,6 +53,12 @@ namespace ShopBasket.ViewModels
 
         public async void GetSearchedProducts(string search)
         {
+            string StoreID = Preferences.Get("Store_IDs", "");
+            string[] StoreIDs = StoreID.Split(',');
+
+            var request = new GeolocationRequest(GeolocationAccuracy.Medium);
+            var Currentlocation = await Geolocation.GetLocationAsync(request);
+
             //var Url = "ttp://shopbasket.azurewebsites.net/api/search";                 //Used When Deploying API
             var Url = "http://10.0.2.2:5000/api/search";                                  //used while local hosting API
             HttpClient httpClient = new HttpClient();
@@ -70,58 +80,65 @@ namespace ShopBasket.ViewModels
                         }
                         else
                         {
-                            var prodInfo = JsonConvert.DeserializeObject<ObservableCollection<ProductListModelDisplay>>(content);  //Extact data to list of products
+                            var prodInfo = JsonConvert.DeserializeObject<List<StoreDetailModel>>(content);  //Extact data to list of products
 
-                            for (int k = 0; k < prodInfo.Count; k++)                                    // Loop through List of products given from API         
-                            {
-                                if (PList == null)
-                                {
-                                    PList = prodInfo;
+                                foreach (var prod in prodInfo)
+                                 {
+                                     
 
-                                    for (int p = 0; p < prodInfo.Count; p++)
-                                    {
+                                     for (int i = 0; i < StoreIDs.Length - 1; i++)
+                                     {
+                                              if (prod.StoreID == i + 1)
+                                              {
+                                                 if (pre_prodList.Count == 0)
+                                                 {
+                                                      pre_prodList.Add(prod);
+                                                 }
+                                                 else
+                                                 {
+                                                        bool duplicate = false;
+                                                        for (int j = 0; j < pre_prodList.Count; j++)
+                                                          {
+                                                             if (prod.Barcode == pre_prodList[j].Barcode)                  // Loops through temp list and elinates duplicate products
+                                                                {
+                                                                    duplicate = true;
+                                                                      break;
+                                                                 }
 
-                                        MemoryStream ms = new MemoryStream(prodInfo[p].ProdImg);
-                                        Image image = new Image();
-                                        image.Source = ImageSource.FromStream(() => ms);
-                                        PList[p].ProdImage = image;
-                                    }
+                                                           }
 
 
+                                                       if (duplicate == false)
+                                                        {
+                                                            //MemoryStream ms = new MemoryStream(prodInfo[k].ProdImg);
+                                                             //        //Image img = new Image();
+                                                           //        //img.Source = ImageSource.FromStream(() => ms);
+                    
+                                                            //        //prodInfo[k].ProdImage = img;
+                                                               pre_prodList.Add(prod);
+                                                        }
+                                                 }
 
+                                              }
+                                     }
 
-                                }
+                                       
 
-                                else
-                                {
-                                    bool duplicate = false;
-                                    for (int j = 0; j < PList.Count; j++)
-                                    {
-                                        if (prodInfo[k].Barcode == PList[j].Barcode)                  // Loops through temp list and elinates duplicate products
-                                        {
-                                            duplicate = true;
-                                            break;
-                                        }
+                                        
+                                 }
+                       
+                         
+                                  PList = new ObservableCollection<StoreDetailModel>(pre_prodList);
 
-                                    }
-                                    if (duplicate == false)
-                                    {
-                                        MemoryStream ms = new MemoryStream(prodInfo[k].ProdImg);
-                                        Image img = new Image();
-                                        img.Source = ImageSource.FromStream(() => ms);
+                                    for (int q = 0; q < PList.Count; q++)
+                                     {
+                                             MemoryStream ms = new MemoryStream(PList[q].ProdImg);
+                                            PList[q].ProdImage = ImageSource.FromStream(() => ms);
+                                     }
+                          
 
-                                        prodInfo[k].ProdImage = img;
-                                        PList.Add(prodInfo[k]);
-                                    }
-                                }
-                            }
-                            //foreach (var Product in ProdList)
-                            // {
-                            //  MemoryStream ms = new MemoryStream(Product.ProdImg);
-                            //  Product.ProdImg = ImageSource.FromStream(() => ms);
-                            //  }
-                            //Assign temp list to Displayed list.
                         }
+
 
                     }
 
@@ -130,12 +147,13 @@ namespace ShopBasket.ViewModels
                         Debug.WriteLine("An error occured while loading data"); // Sever ERROR 
 
                     }
-                }
-                // ProdList = new ObservableCollection<ProductListModel>(preProdList);
 
             }
-           
+            
 
         }
+           
+
+   }
  }
 
