@@ -55,8 +55,9 @@ namespace ShopBasket.ViewModels.sp_Models
             //ProdList = new List<ProductListModel>();
 
 
-            //var Url = "ttp://shopbasket.azurewebsites.net/api/prodOnSpl";
+            //var Url = "http://shopbasket.azurewebsites.net/api/ProductsByCategory";
             var Url = "http://10.0.2.2:5000/api/ProductsByCategory";
+            //var Url = "http://3d05b49d.ngrok.io/api/ProductsByCategory";
             HttpClient httpClient = new HttpClient();
 
 

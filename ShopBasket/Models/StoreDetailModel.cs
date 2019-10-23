@@ -14,6 +14,7 @@ namespace ShopBasket.Models
         public string CatName { get; set; }
 
         public float Current_Price { get; set; }
+        public string DisplayPrice { get; set; }
 
         public byte[] ProdImg { get; set; }
 
@@ -30,5 +31,8 @@ namespace ShopBasket.Models
         public string Distance { get; set; }
 
         public ImageSource ProdImage { get; set; }
+        public bool OnSpecial { get; set; }
+
+        public string OnSale { get; set; }
     }
 }

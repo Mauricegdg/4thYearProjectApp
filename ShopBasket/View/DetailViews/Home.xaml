@@ -16,9 +16,16 @@
 
 
     <ContentPage.Content>
-       
+
         
-        
+           <StackLayout>
+                <StackLayout VerticalOptions="FillAndExpand" AnchorY="0">
+                    <StackLayout VerticalOptions="Start" HorizontalOptions="Center">
+                        <Label Text="Products on Sale" FontSize="Title" TextColor="Orange" TextDecorations="Underline"/>
+                    </StackLayout>
+                </StackLayout>
+            <ScrollView>
+
         <ListView ItemsSource="{Binding ProdList}"
                   HasUnevenRows="True"
                   x:Name="prodList"
@@ -51,11 +58,13 @@
                             
                             <Label Grid.Column="1"
                                    Text="{Binding ProdName}"
-                                   VerticalOptions="End"/>
+                                   VerticalOptions="End"
+                                   FontAttributes="Bold"/>
                             <Label Grid.Column="1"
                                    Grid.Row="1"
                                    VerticalOptions="Start"
-                                   Text="{Binding CatName}"/>
+                                   Text="{Binding CatName}"
+                                   FontAttributes="Bold"/>
 
                         </Grid>
 
@@ -63,6 +72,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
+            </ScrollView>
+            </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

@@ -46,8 +46,10 @@ namespace ShopBasket.Models
 
             //var Url = "http://shopbasket.azurewebsites.net/api/storeLocations";       //Used when API is deployed.
             var Url = "http://10.0.2.2:5000/api/storeLocations";                        //Used for development testing with hosing locally
+            //var Url = "http://http://3d05b49d.ngrok.io/api/storeLocations"; 
 
             HttpClient httpClient = new HttpClient();
+            
 
             var response = await httpClient.GetAsync(Url);                              //Gets response from API
 
@@ -65,8 +67,8 @@ namespace ShopBasket.Models
                   
                     foreach (var Store in StoreInfo)                                                  //Loop through list of stores.
                     {
-                        var storeLocation = new Location(double.Parse(Store.Latitude), double.Parse(Store.Longitude));
-                        var testLocation = new Location(-33.96842050869081, 25.62738453084694);                                      // test**** Emulator does not give current location
+                        Location storeLocation = new Location(double.Parse(Store.Latitude), double.Parse(Store.Longitude));
+                        Location testLocation = new Location(-33.96842050869081, 25.62738453084694);                                      // test**** Emulator does not give current location
 
                         double distance = Math.Round(testLocation.CalculateDistance(storeLocation, DistanceUnits.Kilometers), 2);      //Calculating distance as crow flies
 

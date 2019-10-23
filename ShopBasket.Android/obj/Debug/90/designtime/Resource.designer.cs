@@ -5762,95 +5762,95 @@ namespace ShopBasket.Droid
 			// aapt resource value: 0x7F090054
 			public const int abc_vector_test = 2131296340;
 			
-			// aapt resource value: 0x7F010016
-			public const int Avatar1 = 2130771990;
-			
-			// aapt resource value: 0x7F010017
-			public const int Avatar10 = 2130771991;
-			
-			// aapt resource value: 0x7F010018
-			public const int Avatar11 = 2130771992;
-			
-			// aapt resource value: 0x7F010019
-			public const int Avatar12 = 2130771993;
-			
-			// aapt resource value: 0x7F010020
-			public const int Avatar13 = 2130772000;
-			
-			// aapt resource value: 0x7F010021
-			public const int Avatar14 = 2130772001;
-			
-			// aapt resource value: 0x7F010022
-			public const int Avatar15 = 2130772002;
-			
-			// aapt resource value: 0x7F010023
-			public const int Avatar16 = 2130772003;
-			
 			// aapt resource value: 0x7F010024
-			public const int Avatar17 = 2130772004;
+			public const int Avatar1 = 2130772004;
 			
 			// aapt resource value: 0x7F010025
-			public const int Avatar18 = 2130772005;
+			public const int Avatar10 = 2130772005;
 			
 			// aapt resource value: 0x7F010026
-			public const int Avatar19 = 2130772006;
+			public const int Avatar11 = 2130772006;
 			
 			// aapt resource value: 0x7F010027
-			public const int Avatar2 = 2130772007;
+			public const int Avatar12 = 2130772007;
 			
 			// aapt resource value: 0x7F010028
-			public const int Avatar20 = 2130772008;
+			public const int Avatar13 = 2130772008;
 			
 			// aapt resource value: 0x7F010029
-			public const int Avatar21 = 2130772009;
+			public const int Avatar14 = 2130772009;
 			
 			// aapt resource value: 0x7F010030
-			public const int Avatar22 = 2130772016;
+			public const int Avatar15 = 2130772016;
 			
 			// aapt resource value: 0x7F010031
-			public const int Avatar23 = 2130772017;
+			public const int Avatar16 = 2130772017;
 			
 			// aapt resource value: 0x7F010032
-			public const int Avatar24 = 2130772018;
+			public const int Avatar17 = 2130772018;
 			
 			// aapt resource value: 0x7F010033
-			public const int Avatar25 = 2130772019;
+			public const int Avatar18 = 2130772019;
 			
 			// aapt resource value: 0x7F010034
-			public const int Avatar26 = 2130772020;
+			public const int Avatar19 = 2130772020;
 			
 			// aapt resource value: 0x7F010035
-			public const int Avatar27 = 2130772021;
+			public const int Avatar2 = 2130772021;
 			
 			// aapt resource value: 0x7F010036
-			public const int Avatar28 = 2130772022;
+			public const int Avatar20 = 2130772022;
 			
 			// aapt resource value: 0x7F010037
-			public const int Avatar29 = 2130772023;
+			public const int Avatar21 = 2130772023;
 			
 			// aapt resource value: 0x7F010038
-			public const int Avatar3 = 2130772024;
+			public const int Avatar22 = 2130772024;
 			
 			// aapt resource value: 0x7F010039
-			public const int Avatar30 = 2130772025;
+			public const int Avatar23 = 2130772025;
 			
 			// aapt resource value: 0x7F010040
-			public const int Avatar4 = 2130772032;
+			public const int Avatar24 = 2130772032;
 			
 			// aapt resource value: 0x7F010041
-			public const int Avatar5 = 2130772033;
+			public const int Avatar25 = 2130772033;
 			
 			// aapt resource value: 0x7F010042
-			public const int Avatar6 = 2130772034;
+			public const int Avatar26 = 2130772034;
 			
 			// aapt resource value: 0x7F010043
-			public const int Avatar7 = 2130772035;
+			public const int Avatar27 = 2130772035;
 			
 			// aapt resource value: 0x7F010044
-			public const int Avatar8 = 2130772036;
+			public const int Avatar28 = 2130772036;
 			
 			// aapt resource value: 0x7F010045
-			public const int Avatar9 = 2130772037;
+			public const int Avatar29 = 2130772037;
+			
+			// aapt resource value: 0x7F010046
+			public const int Avatar3 = 2130772038;
+			
+			// aapt resource value: 0x7F010047
+			public const int Avatar30 = 2130772039;
+			
+			// aapt resource value: 0x7F010048
+			public const int Avatar4 = 2130772040;
+			
+			// aapt resource value: 0x7F010049
+			public const int Avatar5 = 2130772041;
+			
+			// aapt resource value: 0x7F010050
+			public const int Avatar6 = 2130772048;
+			
+			// aapt resource value: 0x7F010051
+			public const int Avatar7 = 2130772049;
+			
+			// aapt resource value: 0x7F010052
+			public const int Avatar8 = 2130772050;
+			
+			// aapt resource value: 0x7F010053
+			public const int Avatar9 = 2130772051;
 			
 			// aapt resource value: 0x7F090055
 			public const int avd_hide_password = 2131296341;
@@ -5862,16 +5862,25 @@ namespace ShopBasket.Droid
 			public const int Baby = 2130771970;
 			
 			// aapt resource value: 0x7F010003
-			public const int barcode = 2130771971;
+			public const int background = 2130771971;
 			
 			// aapt resource value: 0x7F010004
-			public const int Basket = 2130771972;
+			public const int background2 = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int Beverages = 2130771973;
+			public const int barcode = 2130771973;
 			
 			// aapt resource value: 0x7F010006
-			public const int Browse = 2130771974;
+			public const int Basket = 2130771974;
+			
+			// aapt resource value: 0x7F010007
+			public const int Beverages = 2130771975;
+			
+			// aapt resource value: 0x7F010008
+			public const int Browse = 2130771976;
+			
+			// aapt resource value: 0x7F010009
+			public const int delete = 2130771977;
 			
 			// aapt resource value: 0x7F090057
 			public const int design_bottom_navigation_item_background = 2131296343;
@@ -5891,23 +5900,26 @@ namespace ShopBasket.Droid
 			// aapt resource value: 0x7F09005C
 			public const int design_snackbar_background = 2131296348;
 			
-			// aapt resource value: 0x7F010049
-			public const int DownButton = 2130772041;
-			
-			// aapt resource value: 0x7F010007
-			public const int ElectronicsOffice = 2130771975;
-			
-			// aapt resource value: 0x7F010008
-			public const int frozenfood = 2130771976;
-			
-			// aapt resource value: 0x7F010009
-			public const int HealthBeauty = 2130771977;
+			// aapt resource value: 0x7F010057
+			public const int DownButton = 2130772055;
 			
 			// aapt resource value: 0x7F010010
-			public const int HomeOutdoor = 2130771984;
+			public const int edit = 2130771984;
 			
 			// aapt resource value: 0x7F010011
-			public const int HouseholdCleaning = 2130771985;
+			public const int ElectronicsOffice = 2130771985;
+			
+			// aapt resource value: 0x7F010012
+			public const int frozenfood = 2130771986;
+			
+			// aapt resource value: 0x7F010013
+			public const int HealthBeauty = 2130771987;
+			
+			// aapt resource value: 0x7F010014
+			public const int HomeOutdoor = 2130771988;
+			
+			// aapt resource value: 0x7F010015
+			public const int HouseholdCleaning = 2130771989;
 			
 			// aapt resource value: 0x7F090055
 			public const int ic_audiotrack_dark = 2131296341;
@@ -6449,14 +6461,23 @@ namespace ShopBasket.Droid
 			// aapt resource value: 0x7F090105
 			public const int ic_vol_type_tv_light = 2131296517;
 			
-			// aapt resource value: 0x7F010046
-			public const int inputlayout_togglecollapseicon = 2130772038;
+			// aapt resource value: 0x7F010054
+			public const int inputlayout_togglecollapseicon = 2130772052;
 			
-			// aapt resource value: 0x7F010047
-			public const int inputlayout_togglevisibleicon = 2130772039;
+			// aapt resource value: 0x7F010055
+			public const int inputlayout_togglevisibleicon = 2130772053;
 			
-			// aapt resource value: 0x7F010048
-			public const int input_layout_drop_down_icon = 2130772040;
+			// aapt resource value: 0x7F010056
+			public const int input_layout_drop_down_icon = 2130772054;
+			
+			// aapt resource value: 0x7F010016
+			public const int Logo = 2130771990;
+			
+			// aapt resource value: 0x7F010017
+			public const int Logo2 = 2130771991;
+			
+			// aapt resource value: 0x7F010018
+			public const int min = 2130771992;
 			
 			// aapt resource value: 0x7F090106
 			public const int mr_button_connected_dark = 2131296518;
@@ -6563,17 +6584,20 @@ namespace ShopBasket.Droid
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010012
-			public const int Pantry = 2130771986;
+			// aapt resource value: 0x7F010019
+			public const int Pantry = 2130771993;
 			
-			// aapt resource value: 0x7F010013
-			public const int Sale = 2130771987;
+			// aapt resource value: 0x7F010020
+			public const int plus = 2130772000;
 			
-			// aapt resource value: 0x7F010014
-			public const int scan = 2130771988;
+			// aapt resource value: 0x7F010021
+			public const int Sale = 2130772001;
 			
-			// aapt resource value: 0x7F010015
-			public const int Settings = 2130771989;
+			// aapt resource value: 0x7F010022
+			public const int scan = 2130772002;
+			
+			// aapt resource value: 0x7F010023
+			public const int Settings = 2130772003;
 			
 			// aapt resource value: 0x7F09006F
 			public const int tooltip_frame_dark = 2131296367;
@@ -6581,8 +6605,8 @@ namespace ShopBasket.Droid
 			// aapt resource value: 0x7F090070
 			public const int tooltip_frame_light = 2131296368;
 			
-			// aapt resource value: 0x7F010050
-			public const int UpButton = 2130772048;
+			// aapt resource value: 0x7F010058
+			public const int UpButton = 2130772056;
 			
 			static Drawable()
 			{

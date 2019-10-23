@@ -31,7 +31,7 @@ namespace ShopBasket.View.DetailViews
                     Title = "Beverages";
                     break;
                 case 7:
-                    Title = "Electronics Office";
+                    Title = "Electronics & Office";
                     break;
                 case 4:
                     Title = "Health & Beauty";

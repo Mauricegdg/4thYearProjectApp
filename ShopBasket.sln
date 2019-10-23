@@ -4,10 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBasket.Android", "ShopBasket.Android\ShopBasket.Android.csproj", "{AAA7181A-C19B-4D0D-ADEF-3740BD62601E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF319C67-0685-4C11-88F8-EECD5C162D8D} = {EF319C67-0685-4C11-88F8-EECD5C162D8D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBasket.iOS", "ShopBasket.iOS\ShopBasket.iOS.csproj", "{EF319C67-0685-4C11-88F8-EECD5C162D8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBasket", "ShopBasket\ShopBasket.csproj", "{7DA4B235-2EF2-4F18-B278-06DDFE1FBB12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBasket", "ShopBasket\ShopBasket.csproj", "{7DA4B235-2EF2-4F18-B278-06DDFE1FBB12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -22,6 +22,7 @@ namespace ShopBasket.View
         public LoginPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasBackButton(this, false);
         }
 
         
@@ -45,7 +46,9 @@ namespace ShopBasket.View
 
 
 
+                //var Url = "http://3d05b49d.ngrok.io/api/login";
                 var Url = "http://10.0.2.2:5000/api/login";
+                //var Url = "http://shopbasket.azurewebsites.net/api/login";
 
                 HttpClient httpClient = new HttpClient();
 

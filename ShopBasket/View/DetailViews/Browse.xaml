@@ -26,48 +26,56 @@
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
                 </Image.GestureRecognizers>
             </Image>
+            <Label Text="Pantry" TextColor="Black" BackgroundColor="White" FontSize="Medium" Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Start"/>
 
             <Image Source="frozenfood.jpg" Grid.Row="0" Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
                 </Image.GestureRecognizers>
             </Image>
+            <Label Text="Frozen Food" BackgroundColor="White" TextColor="Black" FontSize="Medium" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Start"/>
 
             <Image Source="Beverages.jpg" Grid.Row="1" Grid.Column="0" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
                 </Image.GestureRecognizers>
             </Image>
-
+            <Label Text="Beverages" BackgroundColor="White" TextColor="Black" FontSize="Medium" Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Start"/>
+            
             <Image Source="ElectronicsOffice.jpeg" Grid.Row="1" Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_7"/>
                 </Image.GestureRecognizers>
             </Image>
+            <Label Text="Electronics &amp; Office" BackgroundColor="White" TextColor="Black" FontSize="Medium" Grid.Column="1" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Start"/>
 
             <Image Source="HealthBeauty.jpg" Grid.Row="2" Grid.Column="0" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
                 </Image.GestureRecognizers>
             </Image>
+            <Label Text="Health &amp; Beauty" TextColor="Black" BackgroundColor="White" FontSize="Medium" Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Start"/>
 
             <Image Source="Baby.png" Grid.Row="2" Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
                 </Image.GestureRecognizers>
             </Image>
+            <Label Text="Baby" TextColor="Black" FontSize="Medium" BackgroundColor="White" Grid.Column="1" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Start"/>
 
             <Image Source="HouseholdCleaning.jpg" Grid.Row="3" Grid.Column="0" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"/>
                 </Image.GestureRecognizers>
             </Image>
+            <Label Text="Household &amp; Cleaning" TextColor="Black" BackgroundColor="White" FontSize="Medium" Grid.Column="0" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Start"/>
 
             <Image Source="HomeOutdoor.jpg" Grid.Row="3" Grid.Column="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_8"/>
                 </Image.GestureRecognizers>
             </Image>
+            <Label Text="Home &amp; Outdoor" TextColor="Black" BackgroundColor="White" FontSize="Medium" Grid.Column="1" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Start"/>
 
           
 

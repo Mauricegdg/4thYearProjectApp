@@ -27,7 +27,9 @@ namespace ShopBasket.Services
         public bool LoggedIN = false;
         public async void Register(RegisterUser user)
         {
-            var Url = "http://shopbasket.azurewebsites.net/api/register";
+           // var Url = "http://shopbasket.azurewebsites.net/api/register";
+            var Url = "http://10.0.2.2:5000/api/register";
+            //var Url = "http://3d05b49d.ngrok.io/api/register";
             HttpClient httpClient = new HttpClient();
 
             //bool IsLoading = true;
@@ -69,7 +71,7 @@ namespace ShopBasket.Services
         //public async void Login(LoginUser logUser)
         //{
         //    //var Url = "http://shopbasket.azurewebsites.net/api/login";
-        //    var Url = "http://10.0.2.2:5000/api/login";
+        //    
 
         //    HttpClient httpClient = new HttpClient();
 

@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ShopBasket.View.RegisterPage"
-             Title="Register">
+             Title="                    Sign Up"
+             BackgroundImageSource="background2.jpg">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -19,23 +20,23 @@
                     </Grid.RowDefinitions>
 
                     <StackLayout Grid.Row="0">
-                        <Entry Placeholder="=Name" FontSize="16" x:Name="EntryName"/>
+                        <Entry Placeholder="Name" TextColor="White" PlaceholderColor="White" FontSize="16" x:Name="EntryName" HorizontalTextAlignment="Center" TabIndex="0"/>
                     </StackLayout>
                     
                     <StackLayout Grid.Row="1">
-                        <Entry Placeholder="=SurnameName" FontSize="16" x:Name="EntrySurname"/>
+                        <Entry Placeholder="Surname" TextColor="White" PlaceholderColor="White" FontSize="16" x:Name="EntrySurname" HorizontalTextAlignment="Center" TabIndex="1"/>
                     </StackLayout>
                         
                     <StackLayout Grid.Row="2">
-                        <Entry Placeholder="=UserName" FontSize="16" x:Name="EntryUsername"/>
+                        <Entry Placeholder="Username" TextColor="White" PlaceholderColor="White" FontSize="16" x:Name="EntryUsername" HorizontalTextAlignment="Center" TabIndex="2"/>
                     </StackLayout>
                         
                     <StackLayout Grid.Row="3">
-                        <Entry Placeholder="=Password" IsPassword="True" FontSize="16" x:Name="EntryPassword"/>
+                        <Entry Placeholder="Password" TextColor="White" PlaceholderColor="White" IsPassword="True" FontSize="16" x:Name="EntryPassword" HorizontalTextAlignment="Center" TabIndex="3"/>
                     </StackLayout>
 
                     <StackLayout Grid.Row="4">
-                        <Button Text="=Register" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" BackgroundColor="Blue" Clicked="Button_Clicked"/>
+                        <Button Text="Register" BackgroundColor="Transparent" TextColor="White" FontSize="Title" Visual="Material" Margin="5,5,5,5" BorderColor="Black" BorderWidth="5" Padding="0" TabIndex="4" Clicked="Button_Clicked"/>
                     </StackLayout>
 
                 </Grid>

@@ -57,7 +57,8 @@ namespace ShopBasket.ViewModels
 
         public async void GetProductsOnSpecial(string StoreID)
         {
-            //var Url = "ttp://shopbasket.azurewebsites.net/api/prodOnSpl";                 //Used When Deploying API
+            //var Url = "http://shopbasket.azurewebsites.net/api/prodOnSpl";                 //Used When Deploying API
+            //var Url = "http://3d05b49d.ngrok.io/api/ProdOnSpl";
             var Url = "http://10.0.2.2:5000/api/ProdOnSpl";                                  //used while local hosting API
             HttpClient httpClient = new HttpClient();
                                                   //Temp List
@@ -69,7 +70,7 @@ namespace ShopBasket.ViewModels
 
                 for (int i = 0; i < StoreIDs.Length-1; i++)                                           //Loop for each store ID in StoreIDs array
                 {
-                    var response = await httpClient.GetAsync(Url + "/" + StoreIDs[i+1]);                //Gets response from API
+                    var response = await httpClient.GetAsync(Url + "/" + StoreIDs[i]);                //Gets response from API
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -98,8 +99,6 @@ namespace ShopBasket.ViewModels
                                     }
                                     
                                         
-
-                                   
                                 }
 
                                 else

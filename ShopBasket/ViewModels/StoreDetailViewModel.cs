@@ -61,6 +61,7 @@ namespace ShopBasket.ViewModels
 
 
             //var Url = "http://shopbasket.azurewebsites.net/api/Search";
+            //var Url = "http://3d05b49d.ngrok.io/api/Search";
             var Url = "http://10.0.2.2:5000/api/Search";
 
             HttpClient httpClient = new HttpClient();
@@ -110,8 +111,14 @@ namespace ShopBasket.ViewModels
 
                         double distance = Math.Round(testLocation.CalculateDistance(storeLocation, DistanceUnits.Kilometers),2);
 
-                        Store.Distance = distance.ToString() +" Km";
-                        //StoreList.Remove(Store);
+                        Store.Distance = distance.ToString("n2") +" Km";
+                        
+                        Store.DisplayPrice =  "R" + Store.Current_Price.ToString("n2");
+
+                        if (Store.OnSpecial == true)
+                        {
+                            Store.OnSale = "On Sale";
+                        }
                     }
 
 

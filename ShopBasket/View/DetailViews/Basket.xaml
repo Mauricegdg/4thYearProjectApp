@@ -4,8 +4,117 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ShopBasket.View.DetailViews.Basket">
-    
-    <Label Text="Info screen 2"/>
+             x:Class="ShopBasket.View.DetailViews.Basket"
+             Title="Basket">
+
+    <ContentPage.Content>
+
+        <StackLayout x:Name="MasterStack" VerticalOptions="FillAndExpand">
+
+            <StackLayout x:Name="TopStack"  VerticalOptions="StartAndExpand">
+                <Grid Padding="10" RowSpacing="2" ColumnSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Grid.Row="0" Grid.Column="1" Source="delete.png" HorizontalOptions="End"  HeightRequest="40" Margin="20,0" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Delete"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Grid.Column="1" Grid.Row="1" Text="Delete List" FontAttributes="Bold" FontSize="Medium"  Margin="0,-7" HorizontalOptions="End" VerticalOptions="StartAndExpand"/>
+
+                    <Image Grid.Row="0" Grid.Column="0" Source="edit.png" HorizontalOptions="Center"  HeightRequest="40" Margin="5,0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Edit"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Grid.Column="0" Grid.Row="1" FontAttributes="Bold" FontSize="Medium" Text="Edit List" Margin="0,-7"  HorizontalOptions="Start" VerticalOptions="Start"/>
+                </Grid>
+                
+                
+            </StackLayout>
+            
+
+            <StackLayout>
+                <Label Text="Total Items" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" Margin="5,5" />
+                <Label Text="{Binding TotalItems}" FontSize="Large" HorizontalOptions="Center" TextColor="Red" Margin="10,10"/>
+                <Label Text="Total Cost at Lowest :" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium" />
+                <Label Text="{Binding LowestTotal}" FontSize="Medium" HorizontalOptions="Center" TextColor="Red" Margin="10,10"/>
+            </StackLayout>
+
+            <StackLayout x:Name="MidStack" VerticalOptions="FillAndExpand">
+
+                <ListView ItemsSource="{Binding StoreList}"
+                  HasUnevenRows="True"
+                  SeparatorVisibility="None"
+                          ItemTapped="ListView_ItemTapped">
+
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image
+                                    HeightRequest="60"
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"
+                                    Aspect="AspectFill"
+                                    WidthRequest="66"
+                                    Grid.RowSpan="2"
+                                    Source="{Binding StoreImageUrl}"/>
+
+
+                                    <Label Grid.Column="1"
+                                           Grid.ColumnSpan="2"
+                                           Text="{Binding Store_Name}"
+                                           VerticalOptions="Center"
+                                           HorizontalOptions="StartAndExpand"
+                                           FontAttributes="Bold"
+                                           FontSize="Large"/>
+
+                                    <Label Grid.Column="1"
+                                           Grid.Row="1"
+                                           VerticalOptions="Center"
+                                           HorizontalOptions="Start"
+                                           Text="{Binding TotalPrice}"
+                                           TextColor="Red"
+                                           FontAttributes="Bold"/>
+                                    
+                                    <Label Grid.Column="2"
+                                           Grid.Row="1"
+                                           VerticalOptions="Center"
+                                           HorizontalOptions="End"
+                                           TextColor="Red"
+                                           Text="{Binding Distance}"
+                                           FontAttributes="Bold"/>
+
+
+                                </Grid>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
     
 </ContentPage>

@@ -15,8 +15,8 @@
             <StackLayout x:Name="TopStack" HorizontalOptions="Center" VerticalOptions="StartAndExpand">
                 <Image x:Name="ProdImage" HeightRequest="100" WidthRequest="100"/>
 
-                <Label x:Name="ProdName" HorizontalTextAlignment="Center" />
-                <Label x:Name="ProdDescription" Margin="20,20" FontSize="Small"/>
+                <Label x:Name="ProdName" HorizontalTextAlignment="Center" FontSize="Title" TextDecorations="Underline" FontAttributes="Bold"/>
+                <Label x:Name="ProdDescription" Margin="20,20" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
 
                 <numeric:SfNumericUpDown x:Name="numericUpDown" Value="1" MaximumDecimalDigits="0" Margin="100,10" Minimum="1" Maximum="100"/>
                 <Button x:Name="AddToCart" Text="Add to Basket" FontSize="Small" HorizontalOptions="CenterAndExpand" Margin="20,0" ImageSource="Basket.png" Clicked="AddToCart_Clicked"/>
@@ -26,8 +26,8 @@
             </StackLayout>
 
             <StackLayout x:Name="MidStack" VerticalOptions="FillAndExpand">
-
-                <ListView ItemsSource="{Binding StoreList}"
+                
+                    <ListView ItemsSource="{Binding StoreList}"
                   HasUnevenRows="True"
                   SeparatorVisibility="None">
 
@@ -56,16 +56,33 @@
 
 
                                     <Label Grid.Column="1"
-                                   Text="{Binding Store_Name}"
-                                   VerticalOptions="End"/>
-                                    <Label Grid.Column="1"
-                                   Grid.Row="1"
-                                   VerticalOptions="Start"
-                                   Text="{Binding Current_Price}"/>
-                                    <Label Grid.Column="1"
-                                   Grid.Row="1"
-                                   VerticalOptions="End"
-                                   Text="{Binding Distance}"/>
+                                           Grid.ColumnSpan="3"
+                                           Text="{Binding Store_Name}"
+                                           VerticalOptions="Center"
+                                           HorizontalOptions="StartAndExpand"
+                                           FontSize="Large"
+                                           FontAttributes="Bold"/>
+                                    <Label  Grid.Column="1"
+                                            Grid.Row="1"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="Start"
+                                            FontAttributes="Bold"
+                                            TextColor="Red"
+                                            Text="{Binding DisplayPrice}"/>
+                                    <Label  Grid.Column="2"
+                                            Grid.Row="1"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="Start"
+                                            FontAttributes="Bold"
+                                            TextColor="Red"
+                                            Text="{Binding OnSale}"/>
+                                    <Label Grid.Column="3" 
+                                           FontAttributes="Bold"
+                                           HorizontalOptions="End"
+                                           TextColor="Red"
+                                           Grid.Row="1"
+                                           VerticalOptions="Center"
+                                           Text="{Binding Distance}"/>
 
 
                                 </Grid>
@@ -74,7 +91,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-
+                
             </StackLayout>
 
         </StackLayout>

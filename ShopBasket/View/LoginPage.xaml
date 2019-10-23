@@ -3,23 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              mc:Ignorable="d"
-             x:Class="ShopBasket.View.LoginPage">
+             x:Class="ShopBasket.View.LoginPage"
+             
+             BackgroundImageSource="background2.jpg" d:NavigationPage.HasBackButton="False">
+    
     <ContentPage.Content>
-        <ScrollView>
-            <Grid VerticalOptions="CenterAndExpand">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
+        
+          <StackLayout>
+              
+                <StackLayout VerticalOptions="StartAndExpand" Padding="0,100,0,0" >
+                    
+                    <controls:CircleImage
+                        
+                                    HeightRequest="180"
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"
+                                    Aspect="AspectFill"
+                                    
+                                    Source="Logo.png"/>
+                </StackLayout>
 
-                <Entry Placeholder="UserName" x:Name="EntryUserName" Grid.Row="0"/>
-                <Entry Placeholder="Password" IsPassword="True" x:Name="EntryPassword" Grid.Row="1"/>
-                <Button Text="Login" Clicked="Button_Clicked_1" BackgroundColor="Blue" TextColor="White" FontSize="16"  Grid.Row="2"/>
-                <Button Text="SignUp" Grid.Row="3" Clicked="Button_Clicked"/>
-            </Grid>
-        </ScrollView>
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Grid VerticalOptions="Center" Padding="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                     <Entry Placeholder="Username" TextColor="White" x:Name="EntryUserName" Grid.Row="0" PlaceholderColor="White"  Margin="0,2" HorizontalTextAlignment="Center" TabIndex="0" />
+                     <Entry Placeholder="Password" HorizontalTextAlignment="Center" Visual="Material" PlaceholderColor="White" IsPassword="True" x:Name="EntryPassword" Grid.Row="1" TextColor="White" Margin="0,2" TabIndex="1"/>
+                     <Button Text="Login" Clicked="Button_Clicked_1" BackgroundColor="Transparent" TextColor="White" FontSize="Title" Visual="Material" Grid.Row="2" Margin="5,5,5,5" BorderColor="Black" BorderWidth="5" TabIndex="2"/>
+                     <Button Text="New User? Sign Up" TextColor="White" BackgroundColor="Transparent" FontSize="Title" Grid.Row="3" Clicked="Button_Clicked" Visual="Material" Margin="5,5,5,5" BorderColor="Black" BorderWidth="5" Padding="0" TabIndex="3" />
+                </Grid>
+            </StackLayout>
+              
+              
+           </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

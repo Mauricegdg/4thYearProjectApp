@@ -54,6 +54,8 @@ namespace ShopBasket.View.DetailViews
             };
 
             var Url = "http://10.0.2.2:5000/api/ShopList";
+            //var Url = "http://3d05b49d.ngrok.io/api/ShopList";
+            //var Url = "http://shopbasket.azurewebsites.net/api/ShopList";
 
             HttpClient httpClient = new HttpClient();
 

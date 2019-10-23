@@ -22,19 +22,21 @@ namespace ShopBasket.View.Menu
 
             InitializeComponent();
             SetItems();
+            
         }
         void SetItems()
         {
             Items = new List<MasterMenuItems>
             {
-                new MasterMenuItems("Home", "Sale.png", Color.White, typeof(Home)),
-                new MasterMenuItems("Basket", "Basket.png", Color.White, typeof(Basket)),
-                new MasterMenuItems("Browse", "Browse.png", Color.White, typeof(Browse)),
-                new MasterMenuItems("Search Or Scan", "scan.png", Color.White, typeof(MainSearch)),
-                new MasterMenuItems("Settings", "Settings.png", Color.White, typeof(Settings))
+                new MasterMenuItems("Home", "Sale.png", Color.Transparent, typeof(Home)),
+                new MasterMenuItems("Basket", "Basket.png", Color.Transparent, typeof(Basket)),
+                new MasterMenuItems("Browse", "Browse.png", Color.Transparent, typeof(Browse)),
+                new MasterMenuItems("Search Or Scan", "scan.png", Color.Transparent, typeof(MainSearch)),
+                new MasterMenuItems("Settings", "Settings.png", Color.Transparent, typeof(Settings))
             };
             listview.ItemsSource = Items;
         }
 
+        
     }
 }

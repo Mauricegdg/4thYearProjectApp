@@ -59,7 +59,8 @@ namespace ShopBasket.ViewModels
             var request = new GeolocationRequest(GeolocationAccuracy.Medium);
             var Currentlocation = await Geolocation.GetLocationAsync(request);
 
-            //var Url = "ttp://shopbasket.azurewebsites.net/api/search";                 //Used When Deploying API
+            //var Url = "http://shopbasket.azurewebsites.net/api/search";                 //Used When Deploying API
+            //var Url = "http://3d05b49d.ngrok.io/api/search";
             var Url = "http://10.0.2.2:5000/api/search";                                  //used while local hosting API
             HttpClient httpClient = new HttpClient();
             //Temp List

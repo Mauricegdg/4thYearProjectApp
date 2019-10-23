@@ -6,7 +6,8 @@
              xmlns:Local="clr-namespace:ShopBasket.View.Menu;assembly=ShopBasket"
              xmlns:DetailViews="clr-namespace:ShopBasket.View.DetailViews;assembly=ShopBasket"
              mc:Ignorable="d"
-             x:Class="ShopBasket.View.Menu.MasterDetail">
+             x:Class="ShopBasket.View.Menu.MasterDetail"
+                  BackgroundImageSource="background2.jpg">
     <MasterDetailPage.Master>
         <Local:MasterPage x:Name="masterpage" />
     </MasterDetailPage.Master>

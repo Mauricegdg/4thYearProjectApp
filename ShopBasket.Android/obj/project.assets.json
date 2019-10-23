@@ -1130,6 +1130,7 @@
         "lib/netcoreapp3.0/Prism.pdb",
         "lib/netcoreapp3.0/Prism.xml",
         "lib/netstandard2.0/Prism.dll",
+        "lib/netstandard2.0/Prism.dll.mdb",
         "lib/netstandard2.0/Prism.pdb",
         "lib/netstandard2.0/Prism.xml",
         "prism.core.7.2.0.1367.nupkg.sha512",

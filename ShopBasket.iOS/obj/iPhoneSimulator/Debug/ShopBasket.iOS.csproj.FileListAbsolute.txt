@@ -270,6 +270,13 @@ C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\ShopBasket.iOS.pdb
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Prism.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Prism.pdb
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Licensing.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Core.XForms.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Core.XForms.iOS.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfNumericUpDown.XForms.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfNumericUpDown.XForms.iOS.dll
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.dll
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.pdb
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.dll
@@ -338,10 +345,4 @@ C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\obj\iPhoneSimulator\Debug\ShopBasket.iOS.csproj.CopyComplete
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\obj\iPhoneSimulator\Debug\ShopBasket.iOS.exe
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\obj\iPhoneSimulator\Debug\ShopBasket.iOS.pdb
-C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Prism.dll
-C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Prism.pdb
-C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Licensing.dll
-C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Core.XForms.dll
-C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Core.XForms.iOS.dll
-C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfNumericUpDown.XForms.dll
-C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfNumericUpDown.XForms.iOS.dll
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.iOS\bin\iPhoneSimulator\Debug\ShopBasket.dll.mdb
