@@ -9,6 +9,7 @@ using System.IO;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -220,66 +221,109 @@ namespace ShopBasket.ViewModels
                     }
 
         }
-         
-        public void DecreaseQty(UserListItems Item)
+
+        public List<UserListItems> DecreaseQty(UserListItems Item)
         {
-            if (ItemList != null )
+            List<UserListItems> displayList = new List<UserListItems>();
+
+            if (_itemList != null )
             {
-                foreach (var items in ItemList)
+               
+                foreach (var items in _itemList)
                 {
                     if (items.Barcode == Item.Barcode)
                     {
-                        int index = ItemList.IndexOf(items);
-                        ItemList[index].Qty = Item.Qty - 1;
+                        items.Qty -= 1;
+
+                        MemoryStream ms = new MemoryStream(items.ProdImg);
+
+                        items.ProdImage = ImageSource.FromStream(() => ms);
+
+                        displayList.Add(items);
+
+
+                    }
+                    else
+                    {
+                        MemoryStream ms = new MemoryStream(items.ProdImg);
+
+                        items.ProdImage = ImageSource.FromStream(() => ms);
+
+                        displayList.Add(items);
                     }
                 }
+
+                
             }
-            refresh();
+             
+            return displayList;
+            
         }
-        public void refresh()
-        {
-            List<UserListItems> RefreshItems = new List<UserListItems>(ItemList);
-            //int totalindexes = RefreshItems.Count;
-            // for (int i = 0; i < RefreshItems.Count; i++)
-            // {
-            //    ItemList.RemoveAt(i);
-            // }
-            ItemList.Clear();
+        
 
-            ItemList = new ObservableCollection<UserListItems>(RefreshItems);
-        }
-
-        public void IncreaseQty(UserListItems Item)
+        public List<UserListItems> IncreaseQty(UserListItems Item)
         {
-            if (ItemList != null)
+            List<UserListItems> displayList = new List<UserListItems>();
+
+            if (_itemList != null)
             {
-                foreach (var items in ItemList)
+
+                foreach (var items in _itemList)
                 {
                     if (items.Barcode == Item.Barcode)
                     {
-                        int index = ItemList.IndexOf(items);
-                        ItemList[index].Qty = Item.Qty + 1;
+                        items.Qty += 1;
+                        MemoryStream ms = new MemoryStream(items.ProdImg);
+
+                        items.ProdImage = ImageSource.FromStream(() => ms);
+                        displayList.Add(items);
+                    }
+                    else
+                    {
+                        MemoryStream ms = new MemoryStream(items.ProdImg);
+
+                        items.ProdImage = ImageSource.FromStream(() => ms);
+                        displayList.Add(items);
                     }
                 }
+
+
             }
-            refresh();
+
+            return displayList;
         }
 
-        public void DeleteItem(UserListItems Item)
+        public List<UserListItems> DeleteItem(UserListItems Item)
         {
-            if (ItemList != null)
+            List<UserListItems> displayList = new List<UserListItems>();
+
+            if (_itemList != null)
             {
-                foreach (var items in ItemList)
+
+                foreach (var items in _itemList)
                 {
                     if (items.Barcode == Item.Barcode)
                     {
-                        ItemList.Remove(items);
-                        break;
+                        //_itemList.Remove(items);
+                    }
+                    else
+                    {
+                        MemoryStream ms = new MemoryStream(items.ProdImg);
+
+                        items.ProdImage = ImageSource.FromStream(() => ms);
+                        displayList.Add(items);
                     }
                 }
             }
-            refresh();
+
+            return displayList;
         }
+
+        public List<UserListItems> getEditedList()
+        {
+            return new List<UserListItems>(_itemList);
+        }
+
     }
 
 }

@@ -1,9 +1,11 @@
-﻿using ShopBasket.Models;
+﻿using Newtonsoft.Json;
+using ShopBasket.Models;
 using ShopBasket.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net.Http;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +19,7 @@ namespace ShopBasket.View.DetailViews
     public partial class BasketItems : ContentPage
     {
         string Username;
-        public ObservableCollection<UserListItems> listItems = new ObservableCollection<UserListItems>();
+        public List<UserListItems> deletedlistItems = new List<UserListItems>();
         UserItems userItems = new UserItems();
         bool changesAreMade = false;
         public BasketItems(string username)
@@ -28,7 +30,7 @@ namespace ShopBasket.View.DetailViews
             
             BindingContext = userItems;
             userItems.GetUserItems(username);
-            // listItems = prodList.ItemsSource;
+          
         }
 
        
@@ -48,9 +50,9 @@ namespace ShopBasket.View.DetailViews
                         if (item.Qty > 1)
                         {
                               changesAreMade = true;
-                              
-                              //userItems.DecreaseQty(item);
-                              //BindingContext = userItems;
+                              prodList.ItemsSource = userItems.DecreaseQty(item);
+                            //userItems.DecreaseQty(item);
+                            //BindingContext = userItems;
                         }
                         
                     }
@@ -59,25 +61,94 @@ namespace ShopBasket.View.DetailViews
                     {
                         changesAreMade = true;
                         //prodList.BeginRefresh();
-                        //userItems.IncreaseQty(item);
-                        
+                        prodList.ItemsSource = userItems.IncreaseQty(item);
+
                     }
                     break;
                 case "Delete Item":
                     {
                         changesAreMade = true;
                         //prodList.BeginRefresh();
-                        //userItems.DeleteItem(item);
+                        prodList.ItemsSource = userItems.DeleteItem(item);
+                        deletedlistItems.Add(item);
                     }
                     break;
             }
         }
 
-        private void ProdList_Refreshing(object sender, EventArgs e)
+        private async void ContentPage_Disappearing(object sender, EventArgs e)
         {
-            userItems.refresh();
+            List<UserListItems> EditedList = userItems.getEditedList();
+
+            var action = await DisplayAlert("Conformation", "Do you want to save changes?", "Yes", "Cancel");
+            if (action)
+            {
+                if (changesAreMade == true)
+                {
+                    var Url = "http://10.0.2.2:5000/api/ShopList";
+                    //var Url = "http://3d05b49d.ngrok.io/api/ShopList";
+                    //var Url = "http://shopbasket.azurewebsites.net/api/ShopList";
+
+                    HttpClient httpClient = new HttpClient();
+
+                    HttpResponseMessage response = await httpClient.DeleteAsync(Url + "/" + Username);
+
+                    if (response.IsSuccessStatusCode == true)
+                    {
+                        bool ItemIsDeleted = false;
+
+                        foreach (var item in EditedList)
+                        {
+                            var shopinglistInfo = new ShoppingListInfo()
+                            {
+                                UserName = Username,
+                                Barcode = item.Barcode,
+                                Qty = item.Qty
+
+                            };
+
+                            foreach (var delItem in deletedlistItems)
+                            {
+                                if (item.Barcode == delItem.Barcode)
+                                {
+                                    ItemIsDeleted = true;
+                                }
+                                else
+                                {
+                                    ItemIsDeleted = false;
+                                }
+                            }
+
+                            if (ItemIsDeleted == false)
+                            {
+                                Url = "http://10.0.2.2:5000/api/ShopList";
+                                //var Url = "http://3d05b49d.ngrok.io/api/ShopList";
+                                //var Url = "http://shopbasket.azurewebsites.net/api/ShopList";
+
+
+
+                                var jsonObject = JsonConvert.SerializeObject(shopinglistInfo);
+                                var content = new StringContent(jsonObject, Encoding.UTF8, "application/json");
+
+                                HttpResponseMessage response2 = await httpClient.PostAsync(Url, content);
+                                if (response2.IsSuccessStatusCode == false)
+                                {
+                                    await DisplayAlert("UnSuccessfully", "There seems to be an error with Editing your items.", "OK");
+                                    break;
+
+                                }
+                            }
+
+                            
+                        }
+                    }
+                    else
+                    {
+                        await DisplayAlert("UnSuccessfully", "There seems to be an error with Editing your items.", "OK");
+                    }
+                    
+                }
+            }
         }
-
-
     }
 }

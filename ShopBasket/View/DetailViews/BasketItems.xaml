@@ -6,7 +6,8 @@
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              mc:Ignorable="d"
              x:Class="ShopBasket.View.DetailViews.BasketItems"
-             Title=" Edit Your Items">
+             Title=" Edit Your Items"
+             Disappearing="ContentPage_Disappearing">
     
     <ContentPage.Content>
         <ListView ItemsSource="{Binding ItemList}"
@@ -14,9 +15,9 @@
                   x:Name="prodList"
                   SeparatorVisibility="None"
                   
-                  ItemTapped="ProdList_ItemTapped"
-                  Refreshing="ProdList_Refreshing">
-                  
+                  ItemTapped="ProdList_ItemTapped">
+
+
 
             <ListView.ItemTemplate>
                 <DataTemplate>

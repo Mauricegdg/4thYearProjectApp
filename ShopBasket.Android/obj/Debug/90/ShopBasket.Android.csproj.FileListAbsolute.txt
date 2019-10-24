@@ -650,5 +650,5 @@ C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.And
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.Android\obj\Debug\90\ShopBasket.Android.csprojAssemblyReference.cache
 C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.Android\obj\Debug\90\res\drawable-hdpi\logo2.png
+C:\Users\Maurice\Desktop\Nmmu IT\4th Final Year\4thYearProjectApp\ShopBasket.Android\obj\Debug\90\ShopBasket.Android.csprojAssemblyReference.cache
